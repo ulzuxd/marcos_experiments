@@ -18,11 +18,11 @@ def my_first_experiment():
     exp.add_flodict(event_dict)
     exp.add_flodict({'rx0_en': (np.array([200, 400]), np.array([1, 0]))})   # readout (start at 200us and end at 400us)
 
-    # exp.plot_sequence()
-    # plt.show()
-
     rxd, msgs = exp.run()
     exp.close_server(only_if_sim=True)
+
+    exp.plot_sequence()
+    plt.show()
 
 
 

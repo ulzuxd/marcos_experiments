@@ -10,8 +10,8 @@ import experiment as ex  #
 
 
 def my_second_experiment():
-    # exp = ex.Experiment(lo_freq=5, rx_t=3.125)
-    exp = ex.Experiment(lo_freq=5, rx_t=1)
+    exp = ex.Experiment(lo_freq=5, rx_t=3.125)
+    # exp = ex.Experiment(lo_freq=5, rx_t=1)
 
     event_dict = {
 	  "tx0": (np.array([50, 130, 200, 360]), np.array([0.5, 0, 0.5j, 0])),
